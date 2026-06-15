@@ -22,32 +22,15 @@
             //                                     |   NUMPAD   |     LALT    |    LCMD    |   SPACE    |  |   ENTER   |   FUNCTION  |  MACOS APP |  MACOS LANG |
 
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4   &kp N5  &kp N6         &kp N7         &kp N8     &kp N9   &kp N0    &kp BSPC    &kp MINUS  &kp EQUAL  &kp GRAVE
-&kp TAB    &kp Q     &kp W     &kp E      &kp R    &kp T   &kp Y          &kp U          &kp I      &kp O    &kp P     &kp DEL     &kp BSLH   &kp LBKT   &kp RBKT
-&kp LCTRL  &kp A     &kp S     &kp D      &kp F    &kp G   &kp H          &kp J          &kp K      &kp L    &kp SEMI  &kp APOS    &kp UP
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V    &kp B   &kp N          &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT  &kp LEFT   &kp DOWN   &kp RIGHT
-&mo 2      &kp LALT  &kp LCMD  &kp SPACE  &kp RET  &mo 1   &kp LG(GRAVE)  &kp LA(SPACE)
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4   &kp N5         &kp N6         &kp N7  &kp N8     &kp N9   &kp N0    &kp BSPC    &kp MINUS  &kp EQUAL  &kp GRAVE
+&kp TAB    &kp Q     &kp W     &kp E      &kp R    &kp T          &kp Y          &kp U   &kp I      &kp O    &kp P     &kp DEL     &kp BSLH   &kp LBKT   &kp RBKT
+&kp LCTRL  &kp A     &kp S     &kp D      &kp F    &kp G          &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp APOS    &kp UP
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V    &kp B          &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT  &kp LEFT   &kp DOWN   &kp RIGHT
+&mo 2      &kp LALT  &kp LCMD  &kp SPACE  &kp RET  &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 1
             >;
         };
 
-        BLUETOOTH {
-            // ---  FUNCTION  -------------------------------------------------------------------------------------------------------------------
-            // | BT Clear  |  BT Prev  |  BT Next  |            |             |            |                           |             |            |             |            |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |            |     UP      |            |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |    LEFT    |    DOWN     |   RIGHT    |          |            | |           |             |             |
-            // |           |           |           |            |             |            |                           |             |    MUTE    |  VOL DOWN   |   VOL UP   |          |            | |           |             |             |
-            //                                     |            |             |            |            |  |           |             |            |             |
-
-            bindings = <
-&bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans      &kp UP        &trans        &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans      &trans  &trans  &trans  &trans  &kp LEFT    &kp DOWN      &kp RIGHT     &trans  &trans  &trans
-&trans      &trans      &trans      &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        NUMPAD {
+        LOWER {
             // ---  NUMPAD  -------------------------------------------------------------------------------------------------------------------
             // |           |           |           |            |             |            |                           |       =       |      /       |      *       |      -     |          |            | |           |             |             |
             // |           |           |           |            |             |            |                           |       7       |      8       |      9       |      +     |          |            | |           |             |             |
@@ -61,6 +44,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT       &trans
+            >;
+        };
+
+        RAISE {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &bt BT_PRV  &bt BT_CLR         &bt BT_NXT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
