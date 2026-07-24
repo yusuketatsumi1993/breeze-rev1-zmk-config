@@ -23,10 +23,10 @@
             //                                     |   NUMPAD   |     LALT    |    LCMD    |   SPACE    |  |   ENTER   |   FUNCTION  |  MACOS APP |  MACOS LANG |
 
             bindings = <
-&kp ESC       &kp N1  &kp N2    &kp N3     &kp N4   &kp N5  &kp N6             &kp N7           &kp N8     &kp N9   &kp N0            &kp LC(SPACE)      &kp MINUS  &kp EQUAL  &kp GRAVE
-&kp TAB       &kp Q   &kp W     &kp E      &kp R    &kp T   &kp Y              &kp U            &kp I      &kp O    &kp P             &kp BACKSPACE      &kp BSLH   &kp LBKT   &kp RBKT
-&kp LCTRL     &kp A   &kp S     &kp D      &kp F    &kp G   &kp H              &kp J            &kp K      &kp L    &kp LEFT_BRACKET  &kp ENTER          &kp UP
-&kp LSHFT     &kp Z   &kp X     &kp C      &kp V    &kp B   &kp N              &kp M            &kp COMMA  &kp DOT  &kp FSLH          &kp DOUBLE_QUOTES  &kp LEFT   &kp DOWN   &kp RIGHT
+&kp ESC       &kp N1  &kp N2    &kp N3     &kp N4   &kp N5  &kp N6             &kp N7           &kp N8     &kp N9   &kp N0       &kp COLON      &kp MINUS  &kp EQUAL  &kp GRAVE
+&kp TAB       &kp Q   &kp W     &kp E      &kp R    &kp T   &kp Y              &kp U            &kp I      &kp O    &kp P        &kp BACKSPACE  &kp BSLH   &kp LBKT   &kp RBKT
+&kp LCTRL     &kp A   &kp S     &kp D      &kp F    &kp G   &kp H              &kp J            &kp K      &kp L    &kp AT_SIGN  &kp ENTER      &kp UP
+&kp LSHFT     &kp Z   &kp X     &kp C      &kp V    &kp B   &kp N              &kp M            &kp COMMA  &kp DOT  &kp FSLH     &kp RC(SPACE)  &kp LEFT   &kp DOWN   &kp RIGHT
 &kp LEFT_ALT  &mo 1   &kp LCMD  &kp SPACE  &kp TAB  &mo 2   &kp LC(RIGHT_ALT)  &kp RIGHT_SHIFT
             >;
         };
@@ -40,11 +40,11 @@
             //                                     |            |             |            |            |  |           |       0       |      .       |              |
 
             bindings = <
-&trans  &trans        &bt BT_PRV       &bt BT_DISC 0   &bt BT_NXT        &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4      &kp N5  &kp NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9        &kp NUMBER_0  &trans  &trans  &trans  &trans
-&trans  &kp C_MUTE    &kp C_VOLUME_UP  &msc SCRL_DOWN  &kp LC(C_BRI_UP)  &trans  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON     &trans  &trans
-&trans  &trans        &kp C_VOL_DN     &msc SCRL_UP    &kp C_BRI_DN      &trans  &kp EQUAL     &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans        &trans  &trans  &trans  &trans
-&trans  &trans        &trans           &trans          &trans            &trans  &trans        &trans
+&trans  &kp EXCLAMATION  &bt BT_PRV       &bt BT_DISC 0   &bt BT_NXT        &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4      &kp N5  &kp NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9        &kp NUMBER_0  &trans  &trans  &trans  &trans
+&trans  &kp C_MUTE       &kp C_VOLUME_UP  &msc SCRL_DOWN  &kp LC(C_BRI_UP)  &trans  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON     &trans  &trans
+&trans  &trans           &kp C_VOL_DN     &msc SCRL_UP    &kp C_BRI_DN      &trans  &kp EQUAL     &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans        &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &mkp LCLK       &mkp RCLK         &trans  &trans        &trans
             >;
         };
 
