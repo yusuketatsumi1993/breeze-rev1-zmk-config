@@ -26,7 +26,7 @@
         };
 
         middleclick {
-            bindings = <&mkp MB3>;
+            bindings = <&mkp MCLK>;
             key-positions = <36 38>;
             layers = <0>;
         };
