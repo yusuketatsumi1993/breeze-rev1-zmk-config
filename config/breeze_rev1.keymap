@@ -16,16 +16,19 @@
         leftclick {
             bindings = <&mkp LCLK>;
             key-positions = <36 37>;
+            layers = <0>;
         };
 
         rightclick {
             bindings = <&mkp RCLK>;
             key-positions = <37 38>;
+            layers = <0>;
         };
 
         middleclick {
             bindings = <&mkp MB3>;
             key-positions = <36 38>;
+            layers = <0>;
         };
     };
 
