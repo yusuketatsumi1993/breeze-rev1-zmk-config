@@ -15,20 +15,20 @@
 
         leftclick {
             bindings = <&mkp LCLK>;
-            key-positions = <36 37>;
-            layers = <0>;
+            key-positions = <49 50>;
+            layers = <0 1 2>;
         };
 
         rightclick {
             bindings = <&mkp RCLK>;
-            key-positions = <37 38>;
-            layers = <0>;
+            key-positions = <50 51>;
+            layers = <0 1 2>;
         };
 
         middleclick {
             bindings = <&mkp MCLK>;
-            key-positions = <36 38>;
-            layers = <0>;
+            key-positions = <49 51>;
+            layers = <0 1 2>;
         };
     };
 
