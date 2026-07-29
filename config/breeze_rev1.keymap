@@ -65,7 +65,7 @@
             //                                     |            |             |            |            |  |           |       0       |      .       |              |
 
             bindings = <
-&trans  &kp EXCLAMATION  &bt BT_PRV       &bt BT_DISC 0   &bt BT_NXT        &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &bt BT_PRV       &bt BT_CLR      &bt BT_NXT        &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
 &trans  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4      &kp N5  &kp NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9        &kp NUMBER_0  &trans  &trans  &trans  &trans
 &trans  &kp C_MUTE       &kp C_VOLUME_UP  &msc SCRL_DOWN  &kp LC(C_BRI_UP)  &trans  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON     &trans  &trans
 &trans  &trans           &kp C_VOL_DN     &msc SCRL_UP    &kp C_BRI_DN      &trans  &kp EQUAL     &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans        &trans  &trans  &trans  &trans
